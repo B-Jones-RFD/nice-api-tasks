@@ -1,0 +1,31 @@
+{
+  "name": "@b-jones-rfd/nice-api-tasks",
+  "version": "0.0.1",
+  "description": "Perform common tasks using the Nice InContact API",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "vitest",
+    "test": "vitest run",
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "lint": "tsc",
+    "ci": "pnpm run lint && pnpm run test && pnpm run build",
+    "release": "pnpm run lint && pnpm run test && pnpm run build && changeset publish"
+  },
+  "keywords": [],
+  "author": "B-Jones-RFD",
+  "license": "MIT",
+  "packageManager": "pnpm@10.12.1",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.4",
+    "@types/node": "^24.0.3",
+    "prettier": "^3.5.3",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}
