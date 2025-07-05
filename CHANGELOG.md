@@ -1,5 +1,11 @@
 # @b-jones-rfd/nice-api-tasks
 
+## 0.1.1
+
+### Patch Changes
+
+- a59edae: Added startDataExtract method
+
 ## 0.1.0
 
 ### Minor Changes
