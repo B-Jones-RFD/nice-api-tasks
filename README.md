@@ -32,7 +32,7 @@ v20.11.1
   - [Installation](#installation)
   - [Usage](#usage)
   - [API](#api)
-  - [Responses](#responses)
+    - [Authentication](#authentication)
   - [Contributing](#contributing)
   - [Versioning](#versioning)
   - [Authors](#authors)
@@ -70,31 +70,20 @@ TBD
 
 ## API
 
-TBD
+#### Authentication
 
-## Responses
+##### getToken(options)
 
-Responses are provided based on the Result type. Success can be determined by checking the success property.
+Implements [OAuth Authentication (Post Authentication)](https://developer.niceincontact.com/API/AuthenticationAPI#/Token/getToken) and returns the access token as the result data.
 
-```ts
-export type Result<TResponse> = Success<TResponse> | Failure
-```
+`options`
 
-### Success
-
-Response is returned in the data property.
-
-```ts
-type Success<TResponse> = { success: true; data: TResponse }
-```
-
-### Failure
-
-Errors are returned in the error property.
-
-```ts
-type Failure = { success: false; error: string }
-```
+| Property     | Type   | Description          | Required |
+| ------------ | ------ | -------------------- | -------- |
+| clientId     | string | Nice Client ID       | Y        |
+| clientSecret | string | Nice Client Password | Y        |
+| username     | string | Nice Access Key      | Y        |
+| password     | string | Nice Access Secret   | Y        |
 
 ## Contributing
 

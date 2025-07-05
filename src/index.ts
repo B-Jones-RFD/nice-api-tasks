@@ -1,3 +1,1 @@
-export const hello = () => {
-    console.log('world')
-}
+export * from './methods'
