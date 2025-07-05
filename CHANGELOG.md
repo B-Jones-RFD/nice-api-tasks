@@ -1,5 +1,11 @@
 # @b-jones-rfd/nice-api-tasks
 
+## 0.1.0
+
+### Minor Changes
+
+- 88c8cd5: Added getToken method
+
 ## 0.0.4
 
 ### Patch Changes
