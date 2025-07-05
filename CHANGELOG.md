@@ -1,5 +1,11 @@
 # @b-jones-rfd/nice-api-tasks
 
+## 0.1.2
+
+### Patch Changes
+
+- 2a2d266: Added getExtractStatus method
+
 ## 0.1.1
 
 ### Patch Changes
