@@ -1,5 +1,11 @@
 # @b-jones-rfd/nice-api-tasks
 
+## 0.1.3
+
+### Patch Changes
+
+- 3a1a10d: Added runExtract method
+
 ## 0.1.2
 
 ### Patch Changes
