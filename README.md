@@ -87,6 +87,17 @@ Implements [OAuth Authentication (Post Authentication)](https://developer.nicein
 
 ### Extracts
 
+#### getExtractStatus(options)
+
+Implements [Data Extraction (Get a specific job status)](https://developer.niceincontact.com/API/DataExtractionAPI#/ExtractingData/getJobStatus) and returns the status of the job. For available extracts review [Data Extraction APIs](https://help.nice-incontact.com/content/recording/dataextractionapi.htm) online help.
+
+`options`
+
+| Property    | Type   | Description  | Required |
+| ----------- | ------ | ------------ | -------- |
+| jobId       | string | Job ID       | Y        |
+| accessToken | string | Bearer token | Y        |
+
 #### startDataExtract(options)
 
 Implements [Data Extraction (Prepares data for extraction)](https://developer.niceincontact.com/API/DataExtractionAPI#/ExtractingData/extractData) and returns the job id as the result data. For available extracts review [Data Extraction APIs](https://help.nice-incontact.com/content/recording/dataextractionapi.htm) online help.
