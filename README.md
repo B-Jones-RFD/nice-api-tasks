@@ -98,6 +98,23 @@ Implements [Data Extraction (Get a specific job status)](https://developer.nicei
 | jobId       | string | Job ID       | Y        |
 | accessToken | string | Bearer token | Y        |
 
+#### runExtracts(options)
+
+Implements [Data Extraction](https://developer.niceincontact.com/API/DataExtractionAPI) and returns the status of the completed job. For available extracts review [Data Extraction APIs](https://help.nice-incontact.com/content/recording/dataextractionapi.htm) online help. This is a multistep process running the following actions:
+
+1. [Start data extract](#startDataExtractoptions)
+2. Polls [Get data extract status](#getExtractStatusoptions) until error or complete
+
+`options`
+
+| Property    | Type   | Description         | Format     | Required |
+| ----------- | ------ | ------------------- | ---------- | -------- |
+| entityName  | string | Extract entity name |            | Y        |
+| version     | string | Extract version     |            | Y        |
+| startDate   | string | Extract start date  | YYYY-MM-DD | Y        |
+| endDate     | string | Extract end date    | YYYY-MM-DD | Y        |
+| accessToken | string | Bearer token        |            | Y        |
+
 #### startDataExtract(options)
 
 Implements [Data Extraction (Prepares data for extraction)](https://developer.niceincontact.com/API/DataExtractionAPI#/ExtractingData/extractData) and returns the job id as the result data. For available extracts review [Data Extraction APIs](https://help.nice-incontact.com/content/recording/dataextractionapi.htm) online help.
