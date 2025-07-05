@@ -25,7 +25,6 @@ v20.11.1
 ## Table of contents
 
 - [nice API Tasks](#nice-api-tasks)
-
   - [Prerequisites](#prerequisites)
   - [Table of contents](#table-of-contents)
   - [Getting Started](#getting-started)
@@ -33,6 +32,7 @@ v20.11.1
   - [Usage](#usage)
   - [API](#api)
     - [Authentication](#authentication)
+    - [Extracts](#extracts)
   - [Contributing](#contributing)
   - [Versioning](#versioning)
   - [Authors](#authors)
@@ -70,9 +70,9 @@ TBD
 
 ## API
 
-#### Authentication
+### Authentication
 
-##### getToken(options)
+#### getToken(options)
 
 Implements [OAuth Authentication (Post Authentication)](https://developer.niceincontact.com/API/AuthenticationAPI#/Token/getToken) and returns the access token as the result data.
 
@@ -84,6 +84,22 @@ Implements [OAuth Authentication (Post Authentication)](https://developer.nicein
 | clientSecret | string | Nice Client Password | Y        |
 | username     | string | Nice Access Key      | Y        |
 | password     | string | Nice Access Secret   | Y        |
+
+### Extracts
+
+#### startDataExtract(options)
+
+Implements [Data Extraction (Prepares data for extraction)](https://developer.niceincontact.com/API/DataExtractionAPI#/ExtractingData/extractData) and returns the job id as the result data. For available extracts review [Data Extraction APIs](https://help.nice-incontact.com/content/recording/dataextractionapi.htm) online help.
+
+`options`
+
+| Property    | Type   | Description         | Format     | Required |
+| ----------- | ------ | ------------------- | ---------- | -------- |
+| entityName  | string | Extract entity name |            | Y        |
+| version     | string | Extract version     |            | Y        |
+| startDate   | string | Extract start date  | YYYY-MM-DD | Y        |
+| endDate     | string | Extract end date    | YYYY-MM-DD | Y        |
+| accessToken | string | Bearer token        |            | Y        |
 
 ## Contributing
 
