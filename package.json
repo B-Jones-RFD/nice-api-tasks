@@ -1,6 +1,6 @@
 {
   "name": "@b-jones-rfd/nice-api-tasks",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Perform common tasks using the Nice InContact API",
   "private": false,
   "main": "./dist/index.js",
