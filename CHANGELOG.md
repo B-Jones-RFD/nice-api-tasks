@@ -1,5 +1,11 @@
 # @b-jones-rfd/nice-api-tasks
 
+## 0.2.0
+
+### Minor Changes
+
+- c7c10ac: Added end to end data extract method
+
 ## 0.1.3
 
 ### Patch Changes
