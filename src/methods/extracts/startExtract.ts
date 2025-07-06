@@ -8,7 +8,7 @@ import { execute } from '../../nice'
  * Prepares requested data for extraction.
  * @see https://developer.niceincontact.com/API/DataExtractionAPI#/ExtractingData/extractData
  */
-export const startDataExtract: Action<
+export const startExtract: Action<
   {
     entityName: string
     version: string

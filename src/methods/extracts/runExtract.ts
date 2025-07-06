@@ -1,6 +1,6 @@
 import type { Action, ExtractStatusResponse } from '../../types'
 import { poll } from '../../utils/poll'
-import { startDataExtract } from './startDataExtract'
+import { startExtract } from './startExtract'
 import { getExtractStatus } from './getExtractStatus'
 
 /**
@@ -19,7 +19,7 @@ export const runExtract: Action<
   },
   ExtractStatusResponse
 > = async (options) => {
-  const jobId = await startDataExtract(options)
+  const jobId = await startExtract(options)
   const result = await poll<ExtractStatusResponse>({
     fn: async () =>
       await getExtractStatus({ jobId, accessToken: options.accessToken }),

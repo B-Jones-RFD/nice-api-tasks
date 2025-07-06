@@ -1,4 +1,5 @@
-export { getToken } from './getToken'
-export { startDataExtract } from './extracts/startDataExtract'
+export { getExtractData } from './extracts/getExtractData'
 export { getExtractStatus } from './extracts/getExtractStatus'
+export { getToken } from './getToken'
 export { runExtract } from './extracts/runExtract'
+export { startExtract } from './extracts/startExtract'
