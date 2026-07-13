@@ -1,5 +1,11 @@
 # @b-jones-rfd/nice-api-tasks
 
+## 0.2.1
+
+### Patch Changes
+
+- fec8c4e: Configure publishing
+
 ## 0.2.0
 
 ### Minor Changes
