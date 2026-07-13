@@ -1,5 +1,12 @@
 # @b-jones-rfd/nice-api-tasks
 
+## 0.2.2
+
+### Patch Changes
+
+- af661ca: Update publishing config
+- b64dc5c: Update deployment config
+
 ## 0.2.1
 
 ### Patch Changes
