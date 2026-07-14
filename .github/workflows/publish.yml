@@ -60,7 +60,7 @@ jobs:
         id: changesets
         uses: changesets/action@v1.9.0
         with:
-          publish: pnpm run release --no-git-checks
+          publish: pnpm run release
           commit: 'chore: release packages'
           title: 'chore: release packages'
         env:
