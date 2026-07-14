@@ -1,5 +1,11 @@
 # @b-jones-rfd/nice-api-tasks
 
+## 0.2.5
+
+### Patch Changes
+
+- 60d2dc2: Customer release command
+
 ## 0.2.4
 
 ### Patch Changes
