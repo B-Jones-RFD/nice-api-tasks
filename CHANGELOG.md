@@ -1,5 +1,11 @@
 # @b-jones-rfd/nice-api-tasks
 
+## 0.2.4
+
+### Patch Changes
+
+- e553844: Remove pnpm git checks
+
 ## 0.2.3
 
 ### Patch Changes
