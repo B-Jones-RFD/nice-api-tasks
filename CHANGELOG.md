@@ -1,5 +1,11 @@
 # @b-jones-rfd/nice-api-tasks
 
+## 0.2.3
+
+### Patch Changes
+
+- 6e83b7b: Update publishing configuration
+
 ## 0.2.2
 
 ### Patch Changes
